@@ -29,7 +29,7 @@ caminhões em uma doca obedecendo as seguintes regras:
  
 ## Cadastro de Entreguas
  
- ```json
+ ```
  POST /delivery
 {
 “vehicle” : “123456”,
@@ -48,7 +48,7 @@ caminhões em uma doca obedecendo as seguintes regras:
 
 ### Movimentos para o carregamento de um pacote
 
-```json
+```
 
 GET /delivery/{deliveryId}/step
 [
