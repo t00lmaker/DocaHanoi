@@ -1,4 +1,4 @@
-package com.luanpontes.hello;
+package com.luanpontes.hanoi;
 
 import static spark.Spark.get;
 
