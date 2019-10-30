@@ -32,13 +32,13 @@ caminhões em uma doca obedecendo as seguintes regras:
  ```
  POST /delivery
 {
-“vehicle” : “123456”,
-“deliveryId” : “1234567890”
-“packages” : [
-{ "id": “1”, “weight”: “14.50”},
-{ "id": “2”, “weight”: “12.15”},
-{ "id": “3”, “weight”: “19.50”}
-]
+	“vehicle” : “123456”,
+	“deliveryId” : “1234567890”
+	“packages” : [
+		{ "id": “1”, “weight”: “14.50”},
+		{ "id": “2”, “weight”: “12.15”},
+		{ "id": “3”, “weight”: “19.50”}
+	]
 }
 
 ---
@@ -52,13 +52,13 @@ caminhões em uma doca obedecendo as seguintes regras:
 
 GET /delivery/{deliveryId}/step
 [
-{ "step" : 1, "packageId": 2, "from": "zona de abastecimento", "to": "zona do caminhão" },
-{ "step" : 2, "packageId": 1, "from": "zona de abastecimento", "to": "zona de transferência" },
-{ "step" : 3, "packageId": 2, "from": "zona do caminhão", "to": "zona de transferência" },
-{ "step" : 4, "packageId": 3, "from": "zona de abastecimento", "to": "zona do caminhão" },
-{ "step" : 5, "packageId": 2, "from": "zona de transferência", "to": "zona de abastecimento" },
-{ "step" : 6, "packageId": 1, "from": "zona de transferência", "to": "zona de caminhão" },
-{ "step" : 7, "packageId": 2, "from": "zona de abastecimento", "to": "zona de caminhão" }
+	{ "step" : 1, "packageId": 2, "from": "zona de abastecimento", "to": "zona do caminhão" },
+	{ "step" : 2, "packageId": 1, "from": "zona de abastecimento", "to": "zona de transferência" },
+	{ "step" : 3, "packageId": 2, "from": "zona do caminhão", "to": "zona de transferência" },
+	{ "step" : 4, "packageId": 3, "from": "zona de abastecimento", "to": "zona do caminhão" },
+	{ "step" : 5, "packageId": 2, "from": "zona de transferência", "to": "zona de abastecimento" },
+	{ "step" : 6, "packageId": 1, "from": "zona de transferência", "to": "zona de caminhão" },
+	{ "step" : 7, "packageId": 2, "from": "zona de abastecimento", "to": "zona de caminhão" }
 ]
 
 ---
