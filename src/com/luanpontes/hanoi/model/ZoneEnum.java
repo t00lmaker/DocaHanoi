@@ -8,31 +8,31 @@ package com.luanpontes.hanoi.model;
  */
 public enum ZoneEnum {
 	
-	A(0, "Abstecimento"),
+	A(0, "zona abstecimento"),
 	
-	T(1, "Transferência"),
+	T(1, "zona transferência"),
 	
-	C(2, "Caminhão")
+	C(2, "zona caminhão")
 	;
 	
 	private int id;
 
-	private String description;
+	private String desc;
 	
 	
 	ZoneEnum(int id, String description) {
 		this.setId(id);
-		this.setDescription(description);
+		this.setDesc(description);
 	}
 
 
-	public String getDescription() {
-		return description;
+	public String getDesc() {
+		return desc;
 	}
 
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDesc(String description) {
+		this.desc = description;
 	}
 
 

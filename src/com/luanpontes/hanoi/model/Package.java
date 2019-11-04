@@ -10,9 +10,9 @@ public class Package {
 	
 	private String id;
 	
-	private String weight;
+	private Double weight;
 	
-	public Package(String id, String weight) {
+	public Package(String id, Double weight) {
 		super();
 		this.id = id;
 		this.weight = weight;
@@ -26,11 +26,11 @@ public class Package {
 		this.id = id;
 	}
 
-	public String getWeight() {
+	public Double getWeight() {
 		return weight;
 	}
 
-	public void setWeight(String weight) {
+	public void setWeight(Double weight) {
 		this.weight = weight;
 	}
 

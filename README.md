@@ -16,7 +16,7 @@ caminhões em uma doca obedecendo as seguintes regras:
 
 ## O que encontra nesse pacote?
 
-- Uma implementação de uma API com o framework spark.
+- Uma implementação de uma API com o micro framework spark.
 
 - Implmentação de testes com Spock.
 
