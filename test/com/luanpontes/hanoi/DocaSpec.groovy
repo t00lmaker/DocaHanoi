@@ -4,6 +4,8 @@ import com.luanpontes.hanoi.model.Package
 import com.luanpontes.hanoi.model.Step
 import static com.luanpontes.hanoi.model.ZoneEnum.*
 
+import com.luanpontes.hanoi.model.Doca
+
 import spock.lang.Specification
 
 public class DocaSpec extends Specification {

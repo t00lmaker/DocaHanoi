@@ -1,11 +1,8 @@
-package com.luanpontes.hanoi;
+package com.luanpontes.hanoi.model;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-
-import com.luanpontes.hanoi.model.Package;
-import com.luanpontes.hanoi.model.Step;
-import com.luanpontes.hanoi.model.ZoneEnum;
 
 
 /**
@@ -30,7 +27,7 @@ public class Doca {
 
 	List<Package> packages;
 
-	private Doca(){
+	public Doca(){
 		indexStep = 0;
 		steps = new ArrayList<>();
 	}
@@ -50,19 +47,24 @@ public class Doca {
 		return this;
 	}
 
-	public Doca packages(List<Package> packages) {
-		indexStep = 0;
-		packages.sort((p1, p2) -> 
+	public Doca packages(Collection<Package> packages) {
+		
+		List<Package> packagesList = new ArrayList<>(packages);
+		
+		packagesList.sort((p1, p2) -> 
 			Double.compare(p1.getWeight(), p2.getWeight())
 		);
 
-		this.packages = packages;
+		this.packages = packagesList;
 
 		return this;
 	}
 
 	public List<Step> steps(){
+		indexStep = 0;
+		
 		move(packages.size(), origin, target, aux);
+		
 		return steps;
 	}
 

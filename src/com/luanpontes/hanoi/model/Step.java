@@ -1,5 +1,6 @@
 package com.luanpontes.hanoi.model;
 
+import java.io.Serializable;
 
 /**
  * Representação de Step de movimentação 
@@ -8,8 +9,10 @@ package com.luanpontes.hanoi.model;
  * @author toolmaker
  *
  */
-public class Step {
+public class Step implements Serializable{
 	
+	private static final long serialVersionUID = -7619989760154551540L;
+
 	private int step;
 	
 	private String packageId;

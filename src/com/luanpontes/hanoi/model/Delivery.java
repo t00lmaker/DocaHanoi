@@ -3,6 +3,7 @@ package com.luanpontes.hanoi.model;
 import java.io.Serializable;
 import java.util.Collection;
 
+import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -20,6 +21,7 @@ public class Delivery implements Serializable{
 	private String deliveryId;
 	
 	@NotEmpty
+	@Valid
 	private Collection<Package> packages;
 
 	public String getVehicle() {
